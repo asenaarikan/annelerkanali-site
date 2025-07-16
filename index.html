@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>annelerkanali</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #e0f7fa; /* turkuaz arka plan */
+    }
+
+    header {
+      background-color: #f48fb1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 3.2rem;
+      font-family: 'Pacifico', cursive;
+      color: #fff;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+    }
+
+    .left-bar {
+      flex: 0.5; /* Daha dar sol alan */
+      padding: 1rem;
+      background-color: #fce4ec; /* açık pembe sol alan */
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .left-bar .category {
+      padding: 0.75rem;
+      background-color: #f8bbd0; /* orta pembe kutular */
+      border-radius: 0.5rem;
+      text-align: center;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .right-bar {
+      flex: 2;
+      padding: 1rem;
+      background-color: #e0f2f1; /* açık turkuaz */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+      gap: 1rem;
+    }
+
+    .right-bar .product {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .left-bar, .right-bar {
+        width: 100%;
+      }
+
+      .right-bar {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    @annelerkanali'na Hoşgeldiniz
+  </header>
+  <main>
+    <div class="left-bar">
+      <div class="category">Bardak</div>
+      <div class="category">Çanta</div>
+      <div class="category">Tişört</div>
+      <div class="category">Albüm</div>
+      <div class="category">Özel Ürün</div>
+    </div>
+    <div class="right-bar">
+      <div class="product">Ürün 1</div>
+      <div class="product">Ürün 2</div>
+      <div class="product">Ürün 3</div>
+      <div class="product">Ürün 4</div>
+      <div class="product">Ürün 5</div>
+      <div class="product">Ürün 6</div>
+      <div class="product">Ürün 7</div>
+      <div class="product">Ürün 8</div>
+      <div class="product">Ürün 9</div>
+    </div>
+  </main>
+</body>
+</html>
